@@ -1,0 +1,17 @@
+@import './navbar.scss';
+@import './contactUs.scss';
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    flex-basis: 800px;
+    flex-grow: 2;
+    flex-direction: column;
+}
+.footer{
+    background: black;
+    flex-basis: 100px;
+    color:white;
+}
