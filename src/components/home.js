@@ -1,4 +1,5 @@
 import React from 'react';
+import $ from 'jquery';
  class Home extends React.Component {
     componentDidMount() {
         $(document).ready(function() {
@@ -45,9 +46,9 @@ componentWillUnmount() {
 }
     render(){
         return (
-            <div className="bg-danger">
+            <div className="flex1">
                 <br/>
-                <h1 className="mt-5">From Home</h1>
+                <h1 className="mt-6">From Home</h1>
             </div>
         )
     }

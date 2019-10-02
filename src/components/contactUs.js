@@ -1,4 +1,6 @@
 import React from 'react';
+import $ from 'jquery';
+
 import {GoogleMap, withScriptjs, withGoogleMap,Marker,InfoWindow} from 'react-google-maps'
 const Map = () => {
     return (
@@ -14,6 +16,11 @@ const Map = () => {
 const WrappedMap = withScriptjs(withGoogleMap(Map));
 
 export default class Contact extends React.Component {
+    componentDidMount(){
+        $(document).ready(function (){
+            $('.navbar').addClass('bg-dark')
+        })
+    }
     render() {
         return (
             <div className="row">
@@ -23,7 +30,7 @@ export default class Contact extends React.Component {
                 <div style={{width:"100vw",height:"95.75%" }} className="col-md-6 mt-5">
                     
                     <WrappedMap 
-                    googleMapURL={`https://maps.googleapis.com/maps/api/js?key=AIzaSyDyhNmKH8-PNFnKCVDVQK8-DGqs8tszyNE&callback=initMap`}
+                    googleMapURL={`https://maps.googleapis.com/maps/api/js?key=AIzaSyDQqgC0VWlVK3ksmnu44m3Qp9H1yLSvvbw&callback=initMap`}
                     loadingElement={<div style={{height:"100%"}}/>}
                     containerElement={<div style={{height:"100%"}}/>}
                     mapElement={<div style={{height:"100%"}}/>}

@@ -1,12 +1,14 @@
 @import './navbar.scss';
 @import './contactUs.scss';
+@import './home.scss';
 
 .main {
     display: flex;
     flex-direction: column;
 }
 .header {
-    flex-basis: 800px;
+    display: flex;
+    flex-basis: 5000px;
     flex-grow: 2;
     flex-direction: column;
 }
