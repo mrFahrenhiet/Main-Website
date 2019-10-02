@@ -1,5 +1,5 @@
 .card {
-    border: none;
+    border: none!important;
 }
 .modal{
     background:white;
@@ -11,4 +11,33 @@
 .card-title {
     text-align: center;
     color:#606060;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.con0 {
+    margin-left: auto;
+    margin-right: auto;
+}
+.mt-6 {
+    margin-top: 10rem!important;
+}
+.br{
+    border-radius: 3px;
+}
+.con1 {
+    margin: 4rem auto;
+}
+.gform {
+    margin-left: 2.5rem!important;
+}
+.card-text{
+    text-align: justify !important;
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
