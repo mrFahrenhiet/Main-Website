@@ -22,7 +22,7 @@ module.exports = {
             ]
         },
         {
-            test: /\.(png|jpg)$/,
+            test: /\.(png|jpg|jpeg)$/,
             loader: 'url-loader'
         },
         {   test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,

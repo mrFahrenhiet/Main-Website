@@ -10,7 +10,6 @@ import Socities from './socities';
 import Teams from './teams';
 import $ from 'jquery';
 
-
 export default class App extends React.Component {
     expand = () =>{
         return $('.nav-link').ready(()=>{

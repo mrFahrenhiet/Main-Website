@@ -1,6 +1,9 @@
 @import './navbar.scss';
 @import './contactUs.scss';
 @import './home.scss';
+@import '_slickfix.scss';
+@import '../../node_modules/slick-carousel/slick/slick.scss';
+@import '../../node_modules/slick-carousel/slick/slick-theme.scss';
 
 .main {
     display: flex;
@@ -8,7 +11,7 @@
 }
 .header {
     display: flex;
-    flex-basis: 5000px;
+    flex-basis: 8000px;
     flex-grow: 2;
     flex-direction: column;
 }
