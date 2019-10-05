@@ -56,14 +56,14 @@ componentWillUnmount() {
                 </div>
                 <div className="flex2">
                     <h1 style={{textAlign:'center', color:'white'}} className="mt-6"><span style={{color:"#1abc9c"}}>Latest</span> Editions</h1>
-                    <Carousel enableKeyboardControls={true} withoutControls={false} style={{height:'600px'}}   renderCenterLeftControls={({ previousSlide }) => (
+                    <Carousel enableKeyboardControls={true} withoutControls={false} style={{height:'550px'}}   renderCenterLeftControls={({ previousSlide }) => (
                             <button onClick={previousSlide} className="btn"><img src={require('../views/iconSlickleft.png')}/></button>
                         )}
                     renderCenterRightControls={({ nextSlide }) => (
                         <button onClick={nextSlide} className="btn"><img src={require('../views/iconSlickright.png')}/></button>
                     )}
                     renderBottomCenterControls = {null}>
-                        <div>
+                        <div className="one">
                         <div className="card1 l">
                         <img src={require('../views/43.jpg')} style={{width:'250px', height:'350'}} />
                         </div>
@@ -74,7 +74,7 @@ componentWillUnmount() {
                             <img src={require('../views/44.jpg')} style={{width:'250px', height:'350'}} />
                         </div>
                         </div>
-                        <div>
+                        <div className="one">
                         <div className="card1 l">
                         <img src={require('../views/34.jpg')} style={{width:'250px', height:'350'}} />
                         </div>
@@ -85,7 +85,7 @@ componentWillUnmount() {
                             <img src={require('../views/36.jpeg')} style={{width:'250px', height:'350'}} />
                         </div>
                         </div>
-                        <div>
+                        <div className="one">
                         <div className="card1 l">
                         <img src={require('../views/37.jpeg')} style={{width:'250px', height:'350'}} />
                         </div>
@@ -95,6 +95,7 @@ componentWillUnmount() {
                         <div className="card3 l">
                             <img src={require('../views/39.jpg')} style={{width:'250px', height:'350'}} />
                         </div>
+                        
                         </div>
                     </Carousel>
                 </div>
