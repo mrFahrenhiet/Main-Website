@@ -1,7 +1,9 @@
 import React from 'react';
 import $ from 'jquery';
 import Carousel from 'nuka-carousel';
- class Home extends React.Component {
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
+
+class Home extends React.Component {
     componentDidMount() {
         $(document).ready(function() {
             $('.navbar').removeClass('bg-dark text-light');
@@ -52,10 +54,10 @@ componentWillUnmount() {
             <div className="mainHead">
                 <div className="flex1">
                     <br/>
-                    <h1 className="mt-6">From Home</h1>
+                    <h1 className="mt-6">Background Comming Soon</h1>
                 </div>
                 <div className="flex2">
-                    <h1 style={{textAlign:'center', color:'white'}} className="mt-6"><span style={{color:"#1abc9c"}}>Latest</span> Editions</h1>
+                    <h1 style={{textAlign:'center !important', color:'white'}} className="mt-6 text-center ml-41"><span style={{color:"#1abc9c"}}>Latest</span> Editions</h1>
                     <Carousel enableKeyboardControls={true} withoutControls={false} style={{height:'550px'}}   renderCenterLeftControls={({ previousSlide }) => (
                             <button onClick={previousSlide} className="btn"><img src={require('../views/iconSlickleft.png')}/></button>
                         )}
@@ -98,6 +100,401 @@ componentWillUnmount() {
                         
                         </div>
                     </Carousel>
+                </div>
+
+                <div className="flex4 mt-6">
+                <div className="row" >
+                    <div className="col-md-4" >
+                    <div className="blog-card ml-2">
+                    <div className="title-content">
+                        <h3><Link to="/blogs">Sample Blog 1</Link></h3>
+                    </div>
+                    <div className="card-info">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim... 
+                        <Link to="/blog">Read Article<span className="licon icon-arr icon-black" /></Link>
+                    </div>
+                    <div className="utility-info">
+                        <ul className="utility-list">
+                        <li><span className="licon icon-dat" />03 jun 2017</li>
+                        </ul>
+                    </div>
+                    <div className="gradient-overlay" />
+                    <div className="color-overlay" />
+                    </div>{/* /.blog-card */}
+                    </div>
+                    <div className="col-md-4" >
+                    <div className="blog-card ml-3 op2">
+                    <div className="title-content">
+                        <h3><Link to="/blogs">Sample Blog 2</Link></h3>
+                    </div>
+                    <div className="card-info">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim... 
+                        <Link to="/blog">Read Article<span className="licon icon-arr icon-black" /></Link>
+                    </div>
+                    <div className="utility-info">
+                        <ul className="utility-list">
+                        <li><span className="licon icon-dat" />03 jun 2017</li>
+                        </ul>
+                    </div>
+                    <div className="gradient-overlay" />
+                    <div className="color-overlay" />
+                    </div>{/* /.blog-card */}
+                    </div>
+                    <div className="col-md-4" >
+                    <div className="blog-card ml-4 op3">
+                    <div className="title-content">
+                        <h3><Link to="/blogs">Sample Blog 3</Link></h3>
+                    </div>
+                    <div className="card-info">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim... 
+                        <Link to="/blog">Read Article<span className="licon icon-arr icon-black" /></Link>
+                    </div>
+                    <div className="utility-info">
+                        <ul className="utility-list">
+                        <li><span className="licon icon-dat" />03 jun 2017</li>
+                        </ul>
+                    </div>
+                    <div className="gradient-overlay" />
+                    <div className="color-overlay" />
+                    </div>{/* /.blog-card */}
+                    </div>
+                </div>
+                <div className="row mt-99">
+                    <div className="col-md-4" >
+                    <div className="blog-card ml-2">
+                    <div className="title-content">
+                        <h3><Link to="/blogs">Sample Blog 1</Link></h3>
+                    </div>
+                    <div className="card-info">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim... 
+                        <Link to="/blog">Read Article<span className="licon icon-arr icon-black" /></Link>
+                    </div>
+                    <div className="utility-info">
+                        <ul className="utility-list">
+                        <li><span className="licon icon-dat" />03 jun 2017</li>
+                        </ul>
+                    </div>
+                    <div className="gradient-overlay" />
+                    <div className="color-overlay" />
+                    </div>{/* /.blog-card */}
+                    </div>
+                    <div className="col-md-4" >
+                    <div className="blog-card ml-3 op2">
+                    <div className="title-content">
+                        <h3><Link to="/blogs">Sample Blog 2</Link></h3>
+                    </div>
+                    <div className="card-info">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim... 
+                        <Link to="/blog">Read Article<span className="licon icon-arr icon-black" /></Link>
+                    </div>
+                    <div className="utility-info">
+                        <ul className="utility-list">
+                        <li><span className="licon icon-dat" />03 jun 2017</li>
+                        </ul>
+                    </div>
+                    <div className="gradient-overlay" />
+                    <div className="color-overlay" />
+                    </div>{/* /.blog-card */}
+                    </div>
+                    <div className="col-md-4" >
+                    <div className="blog-card ml-4 op3">
+                    <div className="title-content">
+                        <h3><Link to="/blogs">Sample Blog 3</Link></h3>
+                    </div>
+                    <div className="card-info">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim... 
+                        <Link to="/blog">Read Article<span className="licon icon-arr icon-black" /></Link>
+                    </div>
+                    <div className="utility-info">
+                        <ul className="utility-list">
+                        <li><span className="licon icon-dat" />03 jun 2017</li>
+                        </ul>
+                    </div>
+                    <div className="gradient-overlay" />
+                    <div className="color-overlay" />
+                    </div>{/* /.blog-card */}
+                    </div>
+                </div>
+                <div className="row mt-99">
+                    <div className="col-md-4" >
+                    <div className="blog-card ml-2">
+                    <div className="title-content">
+                        <h3><Link to="/blogs">Sample Blog 1</Link></h3>
+                    </div>
+                    <div className="card-info">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim... 
+                        <Link to="/blog">Read Article<span className="licon icon-arr icon-black" /></Link>
+                    </div>
+                    <div className="utility-info">
+                        <ul className="utility-list">
+                        <li><span className="licon icon-dat" />03 jun 2017</li>
+                        </ul>
+                    </div>
+                    <div className="gradient-overlay" />
+                    <div className="color-overlay" />
+                    </div>{/* /.blog-card */}
+                    </div>
+                    <div className="col-md-4" >
+                    <div className="blog-card ml-3 op2">
+                    <div className="title-content">
+                        <h3><Link to="/blogs">Sample Blog 2</Link></h3>
+                    </div>
+                    <div className="card-info">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim... 
+                        <Link to="/blog">Read Article<span className="licon icon-arr icon-black" /></Link>
+                    </div>
+                    <div className="utility-info">
+                        <ul className="utility-list">
+                        <li><span className="licon icon-dat" />03 jun 2017</li>
+                        </ul>
+                    </div>
+                    <div className="gradient-overlay" />
+                    <div className="color-overlay" />
+                    </div>{/* /.blog-card */}
+                    </div>
+                    <div className="col-md-4" >
+                    <div className="blog-card ml-4 op3">
+                    <div className="title-content">
+                        <h3><Link to="/blogs">Sample Blog 3</Link></h3>
+                    </div>
+                    <div className="card-info">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim... 
+                        <Link to="/blog">Read Article<span className="licon icon-arr icon-black" /></Link>
+                    </div>
+                    <div className="utility-info">
+                        <ul className="utility-list">
+                        <li><span className="licon icon-dat" />03 jun 2017</li>
+                        </ul>
+                    </div>
+                    <div className="gradient-overlay" />
+                    <div className="color-overlay" />
+                    </div>{/* /.blog-card */}
+                    </div>
+                </div>
+                <div className="row mt-99">
+                    <div className="col-md-4" >
+                    <div className="blog-card ml-2">
+                    <div className="title-content">
+                        <h3><Link to="/blogs">Sample Blog 1</Link></h3>
+                    </div>
+                    <div className="card-info">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim... 
+                        <Link to="/blog">Read Article<span className="licon icon-arr icon-black" /></Link>
+                    </div>
+                    <div className="utility-info">
+                        <ul className="utility-list">
+                        <li><span className="licon icon-dat" />03 jun 2017</li>
+                        </ul>
+                    </div>
+                    <div className="gradient-overlay" />
+                    <div className="color-overlay" />
+                    </div>{/* /.blog-card */}
+                    </div>
+                    <div className="col-md-4" >
+                    <div className="blog-card ml-3 op2">
+                    <div className="title-content">
+                        <h3><Link to="/blogs">Sample Blog 2</Link></h3>
+                    </div>
+                    <div className="card-info">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim... 
+                        <Link to="/blog">Read Article<span className="licon icon-arr icon-black" /></Link>
+                    </div>
+                    <div className="utility-info">
+                        <ul className="utility-list">
+                        <li><span className="licon icon-dat" />03 jun 2017</li>
+                        </ul>
+                    </div>
+                    <div className="gradient-overlay" />
+                    <div className="color-overlay" />
+                    </div>{/* /.blog-card */}
+                    </div>
+                    <div className="col-md-4" >
+                    <div className="blog-card ml-4 op3">
+                    <div className="title-content">
+                        <h3><Link to="/blogs">Sample Blog 3</Link></h3>
+                    </div>
+                    <div className="card-info">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim... 
+                        <Link to="/blog">Read Article<span className="licon icon-arr icon-black" /></Link>
+                    </div>
+                    <div className="utility-info">
+                        <ul className="utility-list">
+                        <li><span className="licon icon-dat" />03 jun 2017</li>
+                        </ul>
+                    </div>
+                    <div className="gradient-overlay" />
+                    <div className="color-overlay" />
+                    </div>{/* /.blog-card */}
+                    </div>
+                </div>
+                <div className="row mt-99">
+                    <div className="col-md-4" >
+                    <div className="blog-card ml-2">
+                    <div className="title-content">
+                        <h3><Link to="/blogs">Sample Blog 1</Link></h3>
+                    </div>
+                    <div className="card-info">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim... 
+                        <Link to="/blog">Read Article<span className="licon icon-arr icon-black" /></Link>
+                    </div>
+                    <div className="utility-info">
+                        <ul className="utility-list">
+                        <li><span className="licon icon-dat" />03 jun 2017</li>
+                        </ul>
+                    </div>
+                    <div className="gradient-overlay" />
+                    <div className="color-overlay" />
+                    </div>{/* /.blog-card */}
+                    </div>
+                    <div className="col-md-4" >
+                    <div className="blog-card ml-3 op2">
+                    <div className="title-content">
+                        <h3><Link to="/blogs">Sample Blog 2</Link></h3>
+                    </div>
+                    <div className="card-info">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim... 
+                        <Link to="/blog">Read Article<span className="licon icon-arr icon-black" /></Link>
+                    </div>
+                    <div className="utility-info">
+                        <ul className="utility-list">
+                        <li><span className="licon icon-dat" />03 jun 2017</li>
+                        </ul>
+                    </div>
+                    <div className="gradient-overlay" />
+                    <div className="color-overlay" />
+                    </div>{/* /.blog-card */}
+                    </div>
+                    <div className="col-md-4" >
+                    <div className="blog-card ml-4 op3">
+                    <div className="title-content">
+                        <h3><Link to="/blogs">Sample Blog 3</Link></h3>
+                    </div>
+                    <div className="card-info">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim... 
+                        <Link to="/blog">Read Article<span className="licon icon-arr icon-black" /></Link>
+                    </div>
+                    <div className="utility-info">
+                        <ul className="utility-list">
+                        <li><span className="licon icon-dat" />03 jun 2017</li>
+                        </ul>
+                    </div>
+                    <div className="gradient-overlay" />
+                    <div className="color-overlay" />
+                    </div>{/* /.blog-card */}
+                    </div>
+                </div>
+                <div className="row mt-99">
+                    <div className="col-md-4" >
+                    <div className="blog-card ml-2">
+                    <div className="title-content">
+                        <h3><Link to="/blogs">Sample Blog 1</Link></h3>
+                    </div>
+                    <div className="card-info">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim... 
+                        <Link to="/blog">Read Article<span className="licon icon-arr icon-black" /></Link>
+                    </div>
+                    <div className="utility-info">
+                        <ul className="utility-list">
+                        <li><span className="licon icon-dat" />03 jun 2017</li>
+                        </ul>
+                    </div>
+                    <div className="gradient-overlay" />
+                    <div className="color-overlay" />
+                    </div>{/* /.blog-card */}
+                    </div>
+                    <div className="col-md-4" >
+                    <div className="blog-card ml-3 op2">
+                    <div className="title-content">
+                        <h3><Link to="/blogs">Sample Blog 2</Link></h3>
+                    </div>
+                    <div className="card-info">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim... 
+                        <Link to="/blog">Read Article<span className="licon icon-arr icon-black" /></Link>
+                    </div>
+                    <div className="utility-info">
+                        <ul className="utility-list">
+                        <li><span className="licon icon-dat" />03 jun 2017</li>
+                        </ul>
+                    </div>
+                    <div className="gradient-overlay" />
+                    <div className="color-overlay" />
+                    </div>{/* /.blog-card */}
+                    </div>
+                    <div className="col-md-4" >
+                    <div className="blog-card ml-4 op3">
+                    <div className="title-content">
+                        <h3><Link to="/blogs">Sample Blog 3</Link></h3>
+                    </div>
+                    <div className="card-info">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim... 
+                        <Link to="/blog">Read Article<span className="licon icon-arr icon-black" /></Link>
+                    </div>
+                    <div className="utility-info">
+                        <ul className="utility-list">
+                        <li><span className="licon icon-dat" />03 jun 2017</li>
+                        </ul>
+                    </div>
+                    <div className="gradient-overlay" />
+                    <div className="color-overlay" />
+                    </div>{/* /.blog-card */}
+                    </div>
+                </div>
+                <div className="row mt-99">
+                    <div className="col-md-4" >
+                    <div className="blog-card ml-2">
+                    <div className="title-content">
+                        <h3><Link to="/blogs">Sample Blog 1</Link></h3>
+                    </div>
+                    <div className="card-info">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim... 
+                        <Link to="/blog">Read Article<span className="licon icon-arr icon-black" /></Link>
+                    </div>
+                    <div className="utility-info">
+                        <ul className="utility-list">
+                        <li><span className="licon icon-dat" />03 jun 2017</li>
+                        </ul>
+                    </div>
+                    <div className="gradient-overlay" />
+                    <div className="color-overlay" />
+                    </div>{/* /.blog-card */}
+                    </div>
+                    <div className="col-md-4" >
+                    <div className="blog-card ml-3 op2">
+                    <div className="title-content">
+                        <h3><Link to="/blogs">Sample Blog 2</Link></h3>
+                    </div>
+                    <div className="card-info">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim... 
+                        <Link to="/blog">Read Article<span className="licon icon-arr icon-black" /></Link>
+                    </div>
+                    <div className="utility-info">
+                        <ul className="utility-list">
+                        <li><span className="licon icon-dat" />03 jun 2017</li>
+                        </ul>
+                    </div>
+                    <div className="gradient-overlay" />
+                    <div className="color-overlay" />
+                    </div>{/* /.blog-card */}
+                    </div>
+                    <div className="col-md-4" >
+                    <div className="blog-card ml-4 op3">
+                    <div className="title-content">
+                        <h3><Link to="/blogs">Sample Blog 3</Link></h3>
+                    </div>
+                    <div className="card-info">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim... 
+                        <Link to="/blog">Read Article<span className="licon icon-arr icon-black" /></Link>
+                    </div>
+                    <div className="utility-info">
+                        <ul className="utility-list">
+                        <li><span className="licon icon-dat" />03 jun 2017</li>
+                        </ul>
+                    </div>
+                    <div className="gradient-overlay" />
+                    <div className="color-overlay" />
+                    </div>{/* /.blog-card */}
+                    </div>
+                </div>
                 </div>
             </div>
 
