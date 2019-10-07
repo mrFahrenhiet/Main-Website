@@ -35,10 +35,18 @@
 }
 .card-text{
     text-align: justify !important;
-    width: 760px;
+}
+.cdt {
+    width: 760px !important;
 }
 .info{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+.ml-9{
+    margin-left: 315px;
+}
+.mr-9{
+    margin-right: 100px !important;
 }

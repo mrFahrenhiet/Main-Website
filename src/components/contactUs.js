@@ -37,10 +37,10 @@ export default class Contact extends React.Component {
                 <div className="card mt-5 con1" style={{width: '800px'}}> 
                 <div className="card-body">
                         <div>
-                            <h1 className="card-title">Contact Us</h1>
+                            <h1 className="card-title ml-9">Contact Us</h1>
                             <hr></hr>
                             <br/>
-                            <p className="card-text text-dark">We’d love to hear from you. Talk to us about whatever you like, ask us a question or tell us about something you may be interested in. We are all ears.</p>
+                            <p className="card-text text-dark cdt">We’d love to hear from you. Talk to us about whatever you like, ask us a question or tell us about something you may be interested in. We are all ears.</p>
                             <div className="info">
                                 <div className="card text-white bg-dark mb-3 email" style={{width: '18rem'}}>
                                     <div className="card-header">ICON</div>
